@@ -6,14 +6,14 @@ clunky vendor GUIs on the few Windows / Linux distributions they support.
 
 This repostiory allows you to easily install some of those open-source toolchains.
 
-### Getting Started
+## Getting Started
 
 To build FPGA programs for iCE40 boards like the [iCEBreaker](https://github.com/icebreaker-fpga/icebreaker), you'll need
 the `icestorm`, `yosys`, and `nextpnr` or `aranche-pnr` tools. 
 
-To bring in a set of fully working iCE40 tools, you can install the convenience `ice40-tools` metapackage, which will
-install `yosys`, `icestorm`, and `nextpnr-ice40`:
+Installing a simple toolchain is as easy as running the following:
 
 ```
-$ brew install ice40-tools
+$ brew tap ktemkin/oss-fpga
+$ brew install icestorm yosys nextpnr-ice40
 ```
