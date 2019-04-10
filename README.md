@@ -15,5 +15,5 @@ Installing a simple toolchain is as easy as running the following:
 
 ```
 $ brew tap ktemkin/oss-fpga
-$ brew install icestorm yosys nextpnr-ice40
+$ brew install --HEAD icestorm yosys nextpnr-ice40
 ```
