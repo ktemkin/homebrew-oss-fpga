@@ -5,7 +5,7 @@ class ProjectTrellis < Formula
 
   depends_on "cmake" => :build
   depends_on "boost-python3" => :build
-  depends_on "python"
+  depends_on "python@3.8"
   depends_on "libftdi" => :recommended
   depends_on "open-ocd" => :recommended
 
