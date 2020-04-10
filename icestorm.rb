@@ -4,11 +4,17 @@ class Icestorm < Formula
   head "https://github.com/cliffordwolf/icestorm.git"
 
   depends_on "pkg-config" => :build
+  depends_on "gnu-sed" => :build
   depends_on "libftdi"
   depends_on "python"
   depends_on "icestorm"
 
   def install
+
+    # icestorm now uses sed in its makefiles, but assumes gnu-sed syntax; we'll patch them to use
+    # homebrew's names for gnu-sed
+    inreplace 'icebox/Makefile', 'sed', 'gsed'
+
     system "make", "install", "PREFIX=#{prefix}"
 
     # FIXME: Icestorm installs a set of utility functions and database definitions into /bin/,
