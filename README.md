@@ -27,5 +27,5 @@ Installing a simple toolchain is as easy as running the following:
 
 ```
 $ brew tap ktemkin/oss-fpga
-$ brew install --HEAD project-trellis yosys nextpnr-trellis
+$ brew install --HEAD project-trellis yosys nextpnr-ecp5
 ```

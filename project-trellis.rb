@@ -1,7 +1,7 @@
 class ProjectTrellis < Formula
   desc "tools for documenting and working with ECP5 FPGA files"
-  homepage "https://github.com/SymbiFlow/prjtrellis"
-  head "https://github.com/SymbiFlow/prjtrellis.git"
+  homepage "https://github.com/YosysHQ/prjtrellis"
+  head "https://github.com/YosysHQ/prjtrellis.git"
 
   depends_on "cmake" => :build
   depends_on "boost-python3" => :build
